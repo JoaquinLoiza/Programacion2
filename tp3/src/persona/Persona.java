@@ -75,30 +75,17 @@ public class Persona {
 	}
 	
 	public boolean esMayor() {
-		
-		if(edad >= 18)
-			return true;
-		else
-			
-			return false;
+		return edad >= 18;
 	}
 	
-	public boolean esVotante() {
-			
-		if(edad >= 16)
-			return true;
-		else
-			return false;
+	public boolean esVotante() {	
+		return edad >= 16;
 	}
 	
 	public boolean esCoherente() {
+		
 		int anios = calcularEdad();
-		if (anios == edad) {
-			return true;
-		}
-		else {
-			return false;
-		}
+		return (anios == edad);
 	}
 	
 	//Setters
