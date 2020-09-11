@@ -4,7 +4,7 @@ public class Alarma {
 	private boolean seRompioVidrio;
 	private boolean seAbrioPuerta;
 	private boolean seDetectoMovimiento;
-	private Timbre timbre;
+	protected Timbre timbre;
 	
 	public Alarma() {
 		this.seRompioVidrio = false;
@@ -42,7 +42,18 @@ public class Alarma {
 	//Metodos
 	
 	public boolean comprobar() {
-		
-		return false;
+		return (this.seRompioVidrio || this.seDetectoMovimiento || this.seAbrioPuerta);
+	}
+	
+	public boolean hayRobo() {
+		if(this.comprobar()) {
+			this.dispararAlarma();
+			return true;
+		}else
+			return false;
+	}
+	
+	public void dispararAlarma() {
+		this.timbre.hacerSonar();
 	}
 }

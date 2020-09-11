@@ -8,9 +8,11 @@ public class AlarmaLuminosa extends Alarma {
 		super();
 		this.luz = new Luz();
 	}
-
-	public boolean comprobar() {
-		return super.comprobar();
+	
+	@Override
+	public void dispararAlarma() {
+		this.timbre.hacerSonar();
+		this.luz.encender();			
 	}
 }
 
