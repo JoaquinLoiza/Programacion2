@@ -100,24 +100,24 @@ public class Rectangulo {
 		return (ladoac<ladocd);
 	}
 	
-	public double DistanciaLadoSuperior() {
-		PuntoGeometrico puntoA = buscarPuntoA_Sup();
-		
-		
-		return 0;
-	}
+//	public double DistanciaLadoSuperior() {
+//		PuntoGeometrico puntoA = buscarPuntoA_Sup();
+//		
+//		
+//		return 0;
+//	}
 	
-	public PuntoGeometrico buscarPuntoA_Sup() {
-		
-		int YenA = puntoA.getY();
-		int YenB = puntoB.getY();
-		int YenC = puntoC.getY();
-		int YenD = puntoD.getY();
-		
-		if ( (YenA >= YenB) && (YenA >= YenC) )		
-			return puntoA;
-		else if ( (YenC >= YenD) && (YenC >= YenA) )
-			//return puntoC;	
-	}
+//	public PuntoGeometrico buscarPuntoA_Sup() {
+//		
+//		int YenA = puntoA.getY();
+//		int YenB = puntoB.getY();
+//		int YenC = puntoC.getY();
+//		int YenD = puntoD.getY();
+//		
+//		if ( (YenA >= YenB) && (YenA >= YenC) )		
+//			return puntoA;
+//		else if ( (YenC >= YenD) && (YenC >= YenA) )
+//			//return puntoC;	
+//	}
 	
 }
