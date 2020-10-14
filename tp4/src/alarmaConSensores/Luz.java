@@ -1,4 +1,4 @@
-package alarma;
+package alarmaConSensores;
 
 public class Luz {
 	

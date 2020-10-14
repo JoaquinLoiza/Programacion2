@@ -65,5 +65,4 @@ public class Serie {
 	// Determinar si se vio todos los episodios de la serie.
 	
 	
-
 }
